@@ -1,0 +1,33 @@
+<html>
+        <head> 
+            <title>Shopping</title>
+            <script type="text/javascript" src ="formChecker.js"></script>
+            <link href="shopping.css" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+            <h1>Welcome!</h1>
+
+            <form action="customerBackend.php" method="post" onsubmit="return validate()">
+                Please enter your username(must be a valid email address):
+                <input type="text" name="username" id="username"><br><br>
+                Please enter your password:
+                <input type="password" name="password" id="password"><br><br>
+                How many forks would you like to purchase?<br>
+                $2 each:
+                <input type="text" name="fork" id="fork"><br><br>
+                How many spoons would you like to purchase?<br>
+                $1 each:
+                <input type="text" name="spoon" id="spoon"><br><br>
+                How many knives would you like to purchase?<br>
+                $3 each:
+                <input type="text" name="knife" id="knife"><br><br>
+                Please select a shipping option<br>
+                <input type="radio" name="shipping" value="free" id="free"> 7 Day (Free) <br>
+                <input type="radio" name="shipping" value="3Day" id="3Day"> 3 Day ($5) <br>
+                <input type="radio" name="shipping" value="overnight" id="overnight"> Overnight ($50) <br><br>
+                <button type="reset" value="Reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </body>
+
+</html>
